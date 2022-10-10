@@ -16,3 +16,56 @@
     /*visibility: hidden;*/
     display: none;
 }
+
+#play-button{
+    font-size: 200%;
+    border-radius:5px ;
+    background-color:yellow ;
+}
+
+.stop-button{
+    font-size: 200%;
+    border-radius:5px ;
+    background-color:blue ;
+}
+
+.grid-container {
+    display: grid;
+    background-color: black;
+    padding: 10px;
+    height:200px;
+}
+
+.grid-container > div {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    height:160px;
+}
+
+.number{
+    text-align: center;
+}
+
+
+.move {
+    overflow: hidden;
+}
+
+.goLeft {
+    animation: marquee 5s linear infinite;
+    animation-play-state: paused;
+
+
+}
+
+@keyframes marquee {
+    from {transform: translateX(100%); }
+    to {transform: translateX(-100%); }
+}
+
+
+#restart{
+    animation-play-state: paused;
+}
