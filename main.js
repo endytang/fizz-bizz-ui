@@ -40,9 +40,3 @@ const fizzbizz = arr.map(function(originalNumber,index) {
   return originalNumber;
 })
 console.log(fizzbizz);
-
-
-
-
-
-
