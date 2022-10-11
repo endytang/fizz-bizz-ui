@@ -29,11 +29,14 @@ restart.onclick = function(){
 
 const Number = 100;
 const arr = Array.from({length: Number}, (_, index) => index + 1);
-console.log(arr);
-
-// if( arr == 3){
-//   console.log("its 3")
-// }else {
-//   console.log("its not 3")
-// }
-
+const fizzbizz = arr.map(function(originalNumber,index) {
+  if (originalNumber % 5 == 0 && originalNumber % 3 == 0 ) {
+    return "Fizzbizz"
+  } else if (originalNumber % 3 == 0) {
+    return "Fizz"
+  } else if ( originalNumber % 5 == 0) {
+    return "Bizz";
+  }
+  return originalNumber;
+})
+console.log(fizzbizz);
