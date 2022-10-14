@@ -1,12 +1,15 @@
 .text-blue{
     color: blue;
-
+    font-family: 'Brush Script MT', cursive;
 }
 .text-green{
     color: green;
+    font-family: Copperplate, Papyrus, fantasy;
 }
 .text-red{
     color: red;
+    font-family: "Courier New", Courier, monospace;
+
 }
 
 .text-center{
@@ -33,15 +36,14 @@
     display: grid;
     background-color: black;
     padding: 10px;
-    height:200px;
+    height:300px;
 }
 
 .grid-container > div {
     background-color: white;
     text-align: center;
-    padding: 20px 0;
     font-size: 30px;
-    height:160px;
+    height:300px;
 }
 
 .number{
@@ -51,21 +53,17 @@
 
 .move {
     overflow: hidden;
+    word-wrap: break-word;
 }
 
-.goLeft {
-    animation: marquee 5s linear infinite;
-    animation-play-state: paused;
+/*#fizzbizz {*/
+/*    animation: marquee 20s linear infinite;*/
+/*}*/
+/*@keyframes marquee {*/
+/*    from {transform: translateX(100%); }*/
+/*    to {transform: translateX(-100%); }*/
+/*}*/
 
-
-}
-
-@keyframes marquee {
-    from {transform: translateX(100%); }
-    to {transform: translateX(-100%); }
-}
-
-
-#restart{
-    animation-play-state: paused;
+#fizzbizz{
+    font-family: 'Courier New', monospace;
 }
