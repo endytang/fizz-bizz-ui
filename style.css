@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Comforter+Brush&display=swap');
+
+*{
+    font-family: 'Cardo', serif;
+}
+
 .text-blue{
     color: blue;
-
 }
 .text-green{
     color: green;
@@ -13,7 +18,6 @@
     text-align: center;
 }
 .hidden{
-    /*visibility: hidden;*/
     display: none;
 }
 
@@ -21,6 +25,10 @@
     font-size: 200%;
     border-radius:5px ;
     background-color:yellow ;
+}
+#play-button.reset{
+    background-color: blue;
+    color: white;
 }
 
 .stop-button{
@@ -30,18 +38,14 @@
 }
 
 .grid-container {
-    display: grid;
-    background-color: black;
-    padding: 10px;
-    height:200px;
+    border: 10px solid black;
+    margin: 50px;
+    padding: 20px;
 }
 
 .grid-container > div {
-    background-color: white;
     text-align: center;
-    padding: 20px 0;
     font-size: 30px;
-    height:160px;
 }
 
 .number{
@@ -51,21 +55,7 @@
 
 .move {
     overflow: hidden;
-}
-
-.goLeft {
-    animation: marquee 5s linear infinite;
-    animation-play-state: paused;
-
-
-}
-
-@keyframes marquee {
-    from {transform: translateX(100%); }
-    to {transform: translateX(-100%); }
+    word-wrap: break-word;
 }
 
 
-#restart{
-    animation-play-state: paused;
-}
