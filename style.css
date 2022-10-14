@@ -1,22 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Comforter+Brush&display=swap');
+
+*{
+    font-family: 'Cardo', serif;
+}
+
 .text-blue{
     color: blue;
-    font-family: 'Brush Script MT', cursive;
 }
 .text-green{
     color: green;
-    font-family: Copperplate, Papyrus, fantasy;
 }
 .text-red{
     color: red;
-    font-family: "Courier New", Courier, monospace;
-
 }
 
 .text-center{
     text-align: center;
 }
 .hidden{
-    /*visibility: hidden;*/
     display: none;
 }
 
@@ -57,15 +58,4 @@
     word-wrap: break-word;
 }
 
-/*#fizzbizz {*/
-/*    animation: marquee 20s linear infinite;*/
-/*}*/
-/*@keyframes marquee {*/
-/*    from {transform: translateX(100%); }*/
-/*    to {transform: translateX(-100%); }*/
-/*}*/
-
-#fizzbizz{
-    font-family: 'Courier New', monospace;
-}
 
