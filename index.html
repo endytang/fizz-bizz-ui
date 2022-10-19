@@ -11,9 +11,9 @@
 
 </head>
 <body>
-<h1 class="text-center" >
-	Fizz Bizz UI
-</h1>
+	<h1 class="text-center" >
+		Fizz Bizz UI
+	</h1>
 	<p class="text-center">
 		Write a program that prints the numbers from 1 to 100.<br>
 		But for multiples of three print "<b class="text-blue">Fizz</b>" instead of the number,<br>
@@ -21,11 +21,20 @@
 		For numbers which are multiples of both three and five print “<b class="text-red">FizzBuzz</b>”.
 	</p>
 	<div class="text-center  " id="main-button">
-	   <button id="play-button" ><i style="font-size:24px" class="fa">&#xf04b;</i> Play</button>
+		<button id="play-button" ><i style="font-size:24px" class="fa">&#xf04b;</i> Play</button>
+		<button id="pause-button" class="hidden" ><i style="font-size:24px" class="fa">&#xf04c;</i> Pause</button>
+		<button id="switch-button"  ><i style="font-size:24px" ;</i> Switch</button>
+		<div class="container">
+			<form>
+				<input type="search" placeholder="Start From...">
+				<button type="submit">Search</button>
+			</form>
+			</div>
 	</div>
+
 	<div class="grid-container">
 		<div class="move">
-				<p id ="fizzbizz" ></p>
+			<p id ="fizzbizz"  ></p>
 		</div>
 	</div>
 </body>
