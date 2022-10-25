@@ -23,11 +23,20 @@
 	<div class="text-center  " id="main-button">
 		<button id="play-button" ><i style="font-size:24px" class="fa">&#xf04b;</i> Play</button>
 		<button id="pause-button" class="hidden" ><i style="font-size:24px" class="fa">&#xf04c;</i> Pause</button>
-		<button id="switch-button"  ><i style="font-size:24px" ;</i> Switch</button>
-		<div class="container">
+		<button id="switch-button" style="font-size:24px">Switch</button>
+		<button id="animation-reverse" style="font-size:24px">Reverse</button>
+	</div>
+		<div class="container" >
 			<form>
-				<input type="search" placeholder="Start From...">
-				<button type="submit">Search</button>
+				<select id="newvalue" onchange="getNewCombo()">
+					<option value="50">50</option>
+					<option value="100">100</option>
+					<option value="150">150</option>
+					<option value="200">200</option>
+					<option value="300">300</option>
+					<option value="500">500</option>
+					<option value="1000">1000</option>
+				</select>
 			</form>
 			</div>
 	</div>
