@@ -40,7 +40,9 @@
 .grid-container {
     border: 10px solid black;
     margin: 50px;
-    padding: 20px;
+    overflow: hidden;
+    padding: 0 20px;
+    position: relative;
 }
 
 .grid-container > div {
@@ -54,8 +56,14 @@
 
 
 .move {
+    height: 100px;
     overflow: hidden;
     word-wrap: break-word;
 }
 
 
+#fizzbizz{
+    display: flex;
+    position: absolute;
+    left: 0;
+}
