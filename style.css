@@ -31,10 +31,42 @@
     color: white;
 }
 
+#pause-button{
+    font-size: 200%;
+    border-radius:5px ;
+    background-color:red ;
+    color:white;
+}
+
+#switch-button{
+    font-size: 200%;
+    border-radius:5px ;
+    background-color:blue ;
+}
+#play-button.reset{
+    background-color: blue;
+    color: white;
+}
+
 .stop-button{
     font-size: 200%;
     border-radius:5px ;
     background-color:blue ;
+}
+
+.container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
 }
 
 .grid-container {
@@ -52,10 +84,31 @@
     text-align: center;
 }
 
-
 .move {
     overflow: hidden;
     word-wrap: break-word;
+    white-space: nowrap;
 }
+
+#fizzbizz {
+    width: max-content;
+}
+.animation{
+    animation: marquee 10s linear ;
+    animation-iteration-count: 1;
+}
+
+.animapaused{
+    animation-play-state: paused;
+}
+
+.animationreverse{
+    animation-direction:reverse;
+}
+@keyframes marquee {
+
+from {transform: translateX(100%); }
+
+to {transform: translateX(-100%); }
 
 
