@@ -1,61 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Comforter+Brush&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Comforter+Brush&display=swap");
 
-*{
-    font-family: 'Cardo', serif;
-}
-
-.text-blue{
-    color: blue;
-}
-.text-green{
-    color: green;
-}
-.text-red{
-    color: red;
+* {
+  font-family: "Cardo", serif;
 }
 
-.text-center{
-    text-align: center;
+.text-blue {
+  color: blue;
 }
-.hidden{
-    display: none;
+.text-green {
+  color: green;
 }
-
-#play-button{
-    font-size: 200%;
-    border-radius:5px ;
-    background-color:yellow ;
-}
-#play-button.reset{
-    background-color: blue;
-    color: white;
+.text-red {
+  color: red;
 }
 
-.stop-button{
-    font-size: 200%;
-    border-radius:5px ;
-    background-color:blue ;
+.text-center {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+
+#play-button {
+  font-size: 200%;
+  border-radius: 5px;
+  background-color: yellow;
+}
+#play-button.reset {
+  background-color: blue;
+  color: white;
+}
+
+.stop-button {
+  font-size: 200%;
+  border-radius: 5px;
+  background-color: blue;
 }
 
 .grid-container {
-    border: 10px solid black;
-    margin: 50px;
-    padding: 20px;
+  border: 10px solid black;
+  margin: 50px;
+  overflow: hidden;
+  padding: 0 20px;
+  position: relative;
 }
 
 .grid-container > div {
-    text-align: center;
-    font-size: 30px;
+  text-align: center;
+  font-size: 30px;
 }
 
-.number{
-    text-align: center;
+.number {
+  text-align: center;
 }
-
 
 .move {
-    overflow: hidden;
-    word-wrap: break-word;
+  height: 100px;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
-
+#fizzbizz {
+  display: flex;
+  position: absolute;
+  left: 0;
+}
